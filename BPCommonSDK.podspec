@@ -30,7 +30,14 @@ Pod::Spec.new do |spec|
   spec.platform = :ios
   spec.ios.deployment_target = "13.0"
 
-  spec.source            = { :http => 'https://github.com/tunteidas/BPCustSDK/releases/download/1.0.0/BPCommonSDK.zip' }
+  spec.source            = { :http => 'https://github.com/tunteidas/BPCommonSDK/releases/download/1.0.0/BPCommonSDK.zip' }
+
+  spec.dependency 'Alamofire', '5.9.1'
+  spec.dependency 'RxSwift', '6.6.0'
+  spec.dependency 'RxCocoa', '6.6.0'
+  spec.dependency 'SnapKit', '5.0.0'
+  spec.dependency 'SwiftJSON'
+
   spec.vendored_frameworks = 'BPCommonSDK/BioPayCommon.xcframework'
   spec.swift_version = "5.0"
   spec.pod_target_xcconfig = {
